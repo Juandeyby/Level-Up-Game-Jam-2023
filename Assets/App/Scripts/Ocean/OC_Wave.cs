@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace App.Scripts.Ocean
 {
-    public class PG_Wave : MonoBehaviour
+    public class OC_Wave : MonoBehaviour
     {
-        [SerializeField] private PG_Ocean ocean;
+        [SerializeField] private OC_Ocean ocean;
         public void GetWave()
         {
             ocean.EnableRandomWave(this);
