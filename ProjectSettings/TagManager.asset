@@ -4,8 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - GreenSticker
-  - BasicSticker
+  - HydraulicEnergy
+  - WindEnergy
+  - SolarEnergy
+  - WindOffshore
   layers:
   - Default
   - TransparentFX

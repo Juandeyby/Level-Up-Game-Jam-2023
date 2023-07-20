@@ -10,11 +10,9 @@ public class StickerDetector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Hola");
-
         if (other.CompareTag(targetTag))
         {
-            //Debug.Log("Green points: 2/2");
+            Debug.Log("Adding 2 Green points");
             // Sum max green points
         }
         else
@@ -23,16 +21,17 @@ public class StickerDetector : MonoBehaviour
             {
                 if (other.CompareTag(secTag))
                 {
-                    //Debug.Log("Green points: 1/2");
+                    Debug.Log("Adding 1 Green point");
                     // Sum mid green points
-                }
-                else
-                {
-                    //Debug.Log("Green points: 0/0");
-                    // Sum 0 green points
                 }
             }
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Debug.Log("Remove Green points");
+        // Sum 0 green points
     }
 
 }
