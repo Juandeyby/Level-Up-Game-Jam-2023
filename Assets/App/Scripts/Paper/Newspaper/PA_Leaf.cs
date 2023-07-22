@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Lean.Gui;
 using UnityEngine;
 
@@ -5,8 +6,6 @@ namespace App.Scripts.Paper.Newspaper
 {
     public class PA_Leaf : MonoBehaviour
     {
-        [SerializeField] private PA_MiniGame paMiniGame;
-        [Space]
         [SerializeField] private PA_Newspaper newspaper;
         [SerializeField] private Animator animator;
         [SerializeField] private PA_Page page;
@@ -32,12 +31,14 @@ namespace App.Scripts.Paper.Newspaper
         
         public void ShowMiniGame()
         {
-            paMiniGame.Show();
+            var paMiniGames = PA_GamePlay.Instance.PaMiniGames;
+            paMiniGames.ForEach(x => x.Show());
         }
         
         public void HideMiniGame()
         {
-            paMiniGame.Hide();
+            var paMiniGames = PA_GamePlay.Instance.PaMiniGames;
+            paMiniGames.ForEach(x => x.Hide());
         }
     }
 }
