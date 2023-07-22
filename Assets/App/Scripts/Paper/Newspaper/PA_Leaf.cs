@@ -1,9 +1,12 @@
+using Lean.Gui;
 using UnityEngine;
 
 namespace App.Scripts.Paper.Newspaper
 {
     public class PA_Leaf : MonoBehaviour
     {
+        [SerializeField] private PA_MiniGame paMiniGame;
+        [Space]
         [SerializeField] private PA_Newspaper newspaper;
         [SerializeField] private Animator animator;
         [SerializeField] private PA_Page page;
@@ -25,6 +28,16 @@ namespace App.Scripts.Paper.Newspaper
         public void SetPage()
         {
             page.SetPage();
+        }
+        
+        public void ShowMiniGame()
+        {
+            paMiniGame.Show();
+        }
+        
+        public void HideMiniGame()
+        {
+            paMiniGame.Hide();
         }
     }
 }
