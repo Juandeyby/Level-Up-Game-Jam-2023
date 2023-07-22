@@ -7,9 +7,11 @@ namespace App.Scripts.Paper.Newspaper
         [SerializeField] private MiniGameType miniGameType;
         [SerializeField] private CanvasGroup canvasGroup;
         [SerializeField] private PA_MiniGamePlay miniGamePlay;
+        [SerializeField] private Transform target;
         
         public PA_MiniGamePlay MiniGamePlay => miniGamePlay;
         public MiniGameType MiniGameType => miniGameType;
+        public Transform Target => target;
         
         public void Show()
         {
