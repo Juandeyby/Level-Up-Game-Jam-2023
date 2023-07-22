@@ -12,6 +12,7 @@ TagManager:
   - Panel1
   - TurbType1
   - TurbType2
+  - SpawnableArbol
   layers:
   - Default
   - TransparentFX

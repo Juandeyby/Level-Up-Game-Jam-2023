@@ -5,6 +5,7 @@ using UnityEngine;
 public class ZonaCont2 : MonoBehaviour
 {
     public BarraDeEnergia barraDeEnergia;
+    public SpawnerArboles spawnerArboles;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -12,11 +13,13 @@ public class ZonaCont2 : MonoBehaviour
         {
             TurbinasStateGameCont.energiaAdquirida += 2f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
+            spawnerArboles.SpawnObjects();
         }
         if (collision.CompareTag("TurbType2"))
         {
             TurbinasStateGameCont.energiaAdquirida += 1f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
+            spawnerArboles.SpawnObjects();
         }
     }
 
@@ -26,11 +29,13 @@ public class ZonaCont2 : MonoBehaviour
         {
             TurbinasStateGameCont.energiaAdquirida -= 2f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
+            spawnerArboles.DestroyTrees();
         }
         if (collision.CompareTag("TurbType2"))
         {
             TurbinasStateGameCont.energiaAdquirida -= 1f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
+            spawnerArboles.DestroyTrees();
         }
     }
 }
