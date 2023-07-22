@@ -6,6 +6,12 @@ TagManager:
   tags:
   - GreenSticker
   - BasicSticker
+  - Trub1
+  - ZonaCont1
+  - ZoneCont2
+  - Panel1
+  - TurbType1
+  - TurbType2
   layers:
   - Default
   - TransparentFX
