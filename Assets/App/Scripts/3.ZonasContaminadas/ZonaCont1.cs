@@ -15,6 +15,7 @@ public class ZonaCont1 : MonoBehaviour
             TurbinasStateGameCont.energiaAdquirida += 1f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
             spawnerArboles.SpawnObjects();
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Park_Level/Sticker Built");
         }
         if (collision.CompareTag("TurbType2"))
         {

@@ -28,12 +28,14 @@ public class DragNDrop : MonoBehaviour
         _dragging = true;
 
         _offset = GetMousePos() - (Vector2)transform.position;
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Park_Level/Sticker Pull");
     }
 
     private void OnMouseUp()
     {
         transform.position = transform.position;
         _dragging = false;
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Park_Level/Sticker Built");
     }
 
     Vector2 GetMousePos()
