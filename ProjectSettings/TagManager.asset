@@ -12,6 +12,10 @@ TagManager:
   - Panel1
   - TurbType1
   - TurbType2
+  - SpawnableArbol
+  - TurbType3
+  - TurbType4
+  - Sticker
   layers:
   - Default
   - TransparentFX
