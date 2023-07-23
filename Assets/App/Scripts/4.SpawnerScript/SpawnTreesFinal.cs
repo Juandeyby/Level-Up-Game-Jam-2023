@@ -33,15 +33,16 @@ public class SpawnTreesFinal : MonoBehaviour
     public void DeSpawnTreesMethod()
     {
         //Debug.Log(i);
-        if (i>=-1)
+        if (i>=0)
         {
             //Trees[i-1].SetActive(false);
-            animTrees[i-1].SetBool("ArbolIn", false);
             i--;
+            animTrees[i].SetBool("ArbolIn", false);
+            
         }
         else
         {
-            Debug.Log("i=o");
+            i = 0;
         }
     }
 
