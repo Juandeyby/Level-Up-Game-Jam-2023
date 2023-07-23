@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnTreesFinal : MonoBehaviour
 {
     public GameObject[] Trees;
+    public Animator[] animTrees;
     int i = 0;
 
     public GameObject[] nubesSucias;
@@ -17,14 +18,15 @@ public class SpawnTreesFinal : MonoBehaviour
     public void SpawnTreesMethod()
     {
         //Debug.Log(i);
-        if (i < Trees.Length)
+        if (i < animTrees.Length)
         {
-            Trees[i].SetActive(true);
+            //Trees[i].SetActive(true);
+            animTrees[i].SetBool("ArbolIn", true);
             i++;
         }
         else
         {
-            i = Trees.Length - 1;
+            i = animTrees.Length;
         }
     }
 
@@ -33,7 +35,8 @@ public class SpawnTreesFinal : MonoBehaviour
         //Debug.Log(i);
         if (i>=-1)
         {
-            Trees[i-1].SetActive(false);
+            //Trees[i-1].SetActive(false);
+            animTrees[i-1].SetBool("ArbolIn", false);
             i--;
         }
         else

@@ -8,7 +8,7 @@ public class ZonaContGeneral : MonoBehaviour
     public string tagFromZone;
     public bool hasClouds;
     public int cloudeId;
-    public BarraDeEnergia barraDeEnergia;
+    //public BarraDeEnergia barraDeEnergia;
     public SpawnTreesFinal spawnTreesFinal;
     private int numberThatEnter = 0;
 
@@ -62,7 +62,7 @@ public class ZonaContGeneral : MonoBehaviour
     public void AppropiatedTagEnter()
     {
         TurbinasStateGameCont.energiaAdquirida += 2f;
-        barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
+        //barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
         spawnTreesFinal.SpawnTreesMethod();
         if (hasClouds)
         {
@@ -78,7 +78,7 @@ public class ZonaContGeneral : MonoBehaviour
     public void AppropiatedTagExit()
     {
         TurbinasStateGameCont.energiaAdquirida -= 2f;
-        barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
+        //barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
         spawnTreesFinal.DeSpawnTreesMethod();
         if (hasClouds)
         {
@@ -94,12 +94,12 @@ public class ZonaContGeneral : MonoBehaviour
     public void NoTagAppropiatedEnter()
     {
         TurbinasStateGameCont.energiaAdquirida += 0.5f;
-        barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
+        //barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
     }
 
     public void NoTagAppropiatedExit()
     {
         TurbinasStateGameCont.energiaAdquirida -= 0.5f;
-        barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
+        //barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
     }
 }

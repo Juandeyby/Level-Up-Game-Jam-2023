@@ -521,7 +521,6 @@ MonoBehaviour:
   tagFromZone: TurbType1
   hasClouds: 1
   cloudeId: 1
-  barraDeEnergia: {fileID: 111922920}
   spawnTreesFinal: {fileID: 327471721}
   anim: {fileID: 2101561946}
 --- !u!50 &28436295
@@ -828,7 +827,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &111922918
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1221,7 +1220,6 @@ MonoBehaviour:
   tagFromZone: TurbType3
   hasClouds: 0
   cloudeId: 5
-  barraDeEnergia: {fileID: 111922920}
   spawnTreesFinal: {fileID: 327471721}
   anim: {fileID: 117252957}
 --- !u!50 &136679969
@@ -1695,7 +1693,6 @@ MonoBehaviour:
   tagFromZone: TurbType2
   hasClouds: 1
   cloudeId: 2
-  barraDeEnergia: {fileID: 111922920}
   spawnTreesFinal: {fileID: 327471721}
   anim: {fileID: 1043880451}
 --- !u!50 &229377677
@@ -2109,8 +2106,14 @@ MonoBehaviour:
   - {fileID: 1927545137}
   - {fileID: 520728268}
   - {fileID: 1329401662}
-  - {fileID: 1329401662}
   - {fileID: 1891348936}
+  animTrees:
+  - {fileID: 2015329133}
+  - {fileID: 1610406743}
+  - {fileID: 1927545140}
+  - {fileID: 520728271}
+  - {fileID: 1329401665}
+  - {fileID: 1891348939}
   nubesSucias:
   - {fileID: 1808098895}
   - {fileID: 198343191}
@@ -2533,7 +2536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &520728269
 Transform:
   m_ObjectHideFlags: 0
@@ -2543,7 +2546,7 @@ Transform:
   m_GameObject: {fileID: 520728268}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.27, y: -1.82, z: 0}
-  m_LocalScale: {x: 0.25540894, y: 0.25540894, z: 0.25540894}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1684093985}
@@ -3197,7 +3200,6 @@ MonoBehaviour:
   tagFromZone: TurbType4
   hasClouds: 0
   cloudeId: 5
-  barraDeEnergia: {fileID: 111922920}
   spawnTreesFinal: {fileID: 327471721}
   anim: {fileID: 1604976975}
 --- !u!50 &659190300
@@ -3439,7 +3441,6 @@ MonoBehaviour:
   tagFromZone: TurbType2
   hasClouds: 0
   cloudeId: 5
-  barraDeEnergia: {fileID: 111922920}
   spawnTreesFinal: {fileID: 327471721}
   anim: {fileID: 1362119817}
 --- !u!50 &691918036
@@ -4301,7 +4302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &877299106
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4784,7 +4785,6 @@ MonoBehaviour:
   tagFromZone: TurbType4
   hasClouds: 1
   cloudeId: 3
-  barraDeEnergia: {fileID: 111922920}
   spawnTreesFinal: {fileID: 327471721}
   anim: {fileID: 1186877981}
 --- !u!50 &1005647964
@@ -5289,7 +5289,6 @@ MonoBehaviour:
   tagFromZone: TurbType1
   hasClouds: 1
   cloudeId: 0
-  barraDeEnergia: {fileID: 111922920}
   spawnTreesFinal: {fileID: 327471721}
   anim: {fileID: 1032529007}
 --- !u!50 &1092367632
@@ -6303,7 +6302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1329401663
 Transform:
   m_ObjectHideFlags: 0
@@ -6313,7 +6312,7 @@ Transform:
   m_GameObject: {fileID: 1329401662}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.29, y: -0.79, z: 0}
-  m_LocalScale: {x: 0.25540894, y: 0.25540894, z: 0.25540894}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1684093985}
@@ -7061,7 +7060,6 @@ MonoBehaviour:
   tagFromZone: TurbType3
   hasClouds: 0
   cloudeId: 5
-  barraDeEnergia: {fileID: 111922920}
   spawnTreesFinal: {fileID: 327471721}
   anim: {fileID: 1579130466}
 --- !u!50 &1569963971
@@ -7430,7 +7428,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1610406741
 Transform:
   m_ObjectHideFlags: 0
@@ -7440,7 +7438,7 @@ Transform:
   m_GameObject: {fileID: 1610406740}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.1, y: -2.57, z: 0}
-  m_LocalScale: {x: 0.25540894, y: 0.25540894, z: 0.25540894}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1684093985}
@@ -7569,7 +7567,6 @@ MonoBehaviour:
   tagFromZone: TurbType3
   hasClouds: 0
   cloudeId: 5
-  barraDeEnergia: {fileID: 111922920}
   spawnTreesFinal: {fileID: 327471721}
   anim: {fileID: 1787115427}
 --- !u!50 &1629331853
@@ -8429,7 +8426,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 7.0144, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8711,7 +8708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1891348937
 Transform:
   m_ObjectHideFlags: 0
@@ -8721,7 +8718,7 @@ Transform:
   m_GameObject: {fileID: 1891348936}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.01, y: 3.71, z: 0}
-  m_LocalScale: {x: 0.25540894, y: 0.25540894, z: 0.25540894}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1684093985}
@@ -9119,7 +9116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1927545138
 Transform:
   m_ObjectHideFlags: 0
@@ -9129,7 +9126,7 @@ Transform:
   m_GameObject: {fileID: 1927545137}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.96, y: -4.16, z: 0}
-  m_LocalScale: {x: 0.25540894, y: 0.25540894, z: 0.25540894}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1684093985}
@@ -9590,7 +9587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2015329131
 Transform:
   m_ObjectHideFlags: 0
@@ -9600,7 +9597,7 @@ Transform:
   m_GameObject: {fileID: 2015329130}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.77, y: 3.32, z: 0}
-  m_LocalScale: {x: 0.25540894, y: 0.2554089, z: 0.2554089}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1684093985}
