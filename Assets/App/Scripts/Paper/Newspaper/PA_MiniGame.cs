@@ -32,6 +32,6 @@ namespace App.Scripts.Paper.Newspaper
     {
         None,
         Ocean,
-        Factory,
+        TurbinasYFabricasMiniuego,
     }
 }

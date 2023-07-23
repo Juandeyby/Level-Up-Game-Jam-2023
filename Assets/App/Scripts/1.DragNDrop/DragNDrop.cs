@@ -26,7 +26,7 @@ public class DragNDrop : MonoBehaviour
         transform.position = mousePositon - _offset;
     }
 
-    private void OnMouseDown()
+    public virtual void OnMouseDown()
     {
         _dragging = true;
 
@@ -35,7 +35,7 @@ public class DragNDrop : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Park_Level/Sticker Pull");
     }
 
-    private void OnMouseUp()
+    public virtual void OnMouseUp()
     {
         transform.position = transform.position;
         _dragging = false;
