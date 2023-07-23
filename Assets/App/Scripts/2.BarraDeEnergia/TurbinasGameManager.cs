@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,7 +22,7 @@ public class TurbinasGameManager : MonoBehaviour
 
     private void Update()
     {
-        if(Math.Abs(TurbinasStateGameCont.energiaAdquirida - 18) < 0.1f)
+        if(TurbinasStateGameCont.energiaAdquirida == 18)
         {
             StartCoroutine(AppearObjectsInWin());
         }
