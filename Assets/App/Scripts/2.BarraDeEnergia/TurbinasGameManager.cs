@@ -42,6 +42,7 @@ public class TurbinasGameManager : MonoBehaviour
 
     IEnumerator AppearObjectsInLose()
     {
+        yield return new WaitForSeconds(1f);
         endGamePanel.SetActive(true);
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(0);
