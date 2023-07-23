@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/App/Scenes/Ocean.unity
     guid: 0642fe62822727849bf28c346b628386
+  - enabled: 1
+    path: Assets/App/Scenes/TurbinasYFabricasMiniuego.unity
+    guid: 931b26c40bdac1e42828e5ec97b627a9
   m_configObjects: {}

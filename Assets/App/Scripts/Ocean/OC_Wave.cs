@@ -25,6 +25,8 @@ namespace App.Scripts.Ocean
         
         public void SpawnSticker()
         {
+            var ocOcean = OC_GamePlay.Instance.Ocean;
+            if (ocOcean.StickersSpawned <= 0) return;
             var randomPrefab = Random.Range(0, stickersPrefabs.Count);
             var randomSlot = Random.Range(0, stickerSlots.Count);
             Instantiate(stickersPrefabs[randomPrefab], stickerSlots[randomSlot].position, Quaternion.identity, stickersParent);

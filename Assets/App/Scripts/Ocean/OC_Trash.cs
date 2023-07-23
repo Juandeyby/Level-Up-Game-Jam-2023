@@ -10,6 +10,10 @@ namespace App.Scripts.Ocean
             if (col.CompareTag("Sticker"))
             {
                 Destroy(col.gameObject);
+                if (OC_GamePlay.Instance.Ocean.StickersSpawned <= 0)
+                {
+                    OC_GamePlay.Instance.ReturnToPaper();
+                }
             }
         }
     }
