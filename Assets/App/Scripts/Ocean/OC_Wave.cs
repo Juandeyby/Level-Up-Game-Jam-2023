@@ -28,7 +28,7 @@ namespace App.Scripts.Ocean
             var randomPrefab = Random.Range(0, stickersPrefabs.Count);
             var randomSlot = Random.Range(0, stickerSlots.Count);
             Instantiate(stickersPrefabs[randomPrefab], stickerSlots[randomSlot].position, Quaternion.identity, stickersParent);
-            Instantiate(stickersPrefabs[randomPrefab], stickerSlots[randomSlot].position, Quaternion.identity, stickersParent);
+            Instantiate(stickersPrefabs[(randomPrefab + 1) % stickersPrefabs.Count], stickerSlots[(randomSlot + 1) % stickerSlots.Count].position, Quaternion.identity, stickersParent);
         }
     }
 

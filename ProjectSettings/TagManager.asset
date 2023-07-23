@@ -15,6 +15,7 @@ TagManager:
   - SpawnableArbol
   - TurbType3
   - TurbType4
+  - Sticker
   layers:
   - Default
   - TransparentFX
