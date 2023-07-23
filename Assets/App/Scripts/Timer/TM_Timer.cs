@@ -15,7 +15,9 @@ namespace App.Scripts.Timer
         public string music = "event:/Music/Music";
         FMOD.Studio.EventInstance musicEvent;
 
-
+        public string timerSound = "event:/SFX/Canvas/Timer Ends";
+        FMOD.Studio.EventInstance timerEvent;
+        
         private float _timer;
         private float _previousSecond;
         
@@ -27,6 +29,14 @@ namespace App.Scripts.Timer
             {
                 Debug.Log("Timer End");
             });
+            
+            onSecondPassed.AddListener(() =>
+            {
+                if (_timer <= 15.0f)
+                {
+                    timerEvent.start();
+                }
+            });
         }
 
         private void Start()
@@ -34,6 +44,8 @@ namespace App.Scripts.Timer
             _timer = minutes * 60 + seconds;
             musicEvent = FMODUnity.RuntimeManager.CreateInstance(music);
             musicEvent.start();
+            
+            timerEvent = FMODUnity.RuntimeManager.CreateInstance(timerSound);
         }
 
         private void Update()
