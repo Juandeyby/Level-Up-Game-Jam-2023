@@ -283,7 +283,7 @@ MonoBehaviour:
   - {fileID: 2068065272960722160}
   StringsBanks:
   - {fileID: 292618170794574439}
-  cacheTime: 638256960841345125
+  cacheTime: 638257007337791609
   cacheVersion: 131605
 --- !u!114 &292618170794574439
 MonoBehaviour:
@@ -295,14 +295,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Name: bank:/Desktop/Master.strings.bank
   m_EditorClassIdentifier: 
   Path: Build/Desktop/Master.strings.bank
-  Name: Master.strings
+  Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638256960837578815
+  lastModified: 638257007337452500
   FileSizes:
-  - Name: Desktop
+  - Name: 
     Value: 1748
   Exists: 1
 --- !u!114 &344544284532211325
@@ -347,10 +347,8 @@ MonoBehaviour:
   Path: Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638256960841345125
-  FileSizes:
-  - Name: Desktop
-    Value: 918240
+  lastModified: 638257007337791609
+  FileSizes: []
   Exists: 1
 --- !u!114 &801314926278863911
 MonoBehaviour:
@@ -421,10 +419,8 @@ MonoBehaviour:
   Path: Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638256960837568812
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
+  lastModified: 638257007337442526
+  FileSizes: []
   Exists: 1
 --- !u!114 &3957391188447904471
 MonoBehaviour:
@@ -521,10 +517,8 @@ MonoBehaviour:
   Path: Build/Desktop/Music & BG.bank
   Name: Music & BG
   StudioPath: bank:/Music & BG
-  lastModified: 638256943996293471
-  FileSizes:
-  - Name: Desktop
-    Value: 5867808
+  lastModified: 638257007337661955
+  FileSizes: []
   Exists: 1
 --- !u!114 &8287775043196580950
 MonoBehaviour:
