@@ -28,7 +28,14 @@ namespace App.Scripts.Paper.Newspaper
         {
             page.SetPage();
         }
-        
+
+        void PlayPagesEvent(string path)
+        {
+            FMOD.Studio.EventInstance Pages = FMODUnity.RuntimeManager.CreateInstance(path);
+            Pages.start();
+            Pages.release();
+        }
+       
         public void ShowMiniGame()
         {
             var paMiniGames = PA_GamePlay.Instance.PaMiniGames;
