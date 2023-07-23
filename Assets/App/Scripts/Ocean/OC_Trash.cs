@@ -9,8 +9,6 @@ namespace App.Scripts.Ocean
         {
             if (col.CompareTag("Sticker"))
             {
-                var ocDrog = col.GetComponent<OC_Drop>();
-                ocDrog.OnMouseUp();
                 Destroy(col.gameObject);
             }
         }
