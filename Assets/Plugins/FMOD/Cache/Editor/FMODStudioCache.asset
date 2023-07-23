@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3523283623730245269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Park_Level/Sticker Built
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Park_Level/Sticker Built
+  Guid:
+    Data1: -1364365954
+    Data2: 1203603452
+    Data3: 2053262501
+    Data4: 1618105334
+  Banks:
+  - {fileID: 3246091499444137391}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1920
 --- !u!114 &-1474443447817314457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,7 +42,7 @@ MonoBehaviour:
   Path: ../Level_Up_Game_Jam_FMOD_Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638255584652629656
+  lastModified: 638256554036812056
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -36,16 +63,68 @@ MonoBehaviour:
   - {fileID: 6228570007673142302}
   - {fileID: -1474443447817314457}
   - {fileID: 3246091499444137391}
+  - {fileID: 1954678686473036340}
   EditorEvents:
   - {fileID: 5470473995115521507}
   - {fileID: 9034985708504839361}
+  - {fileID: -3523283623730245269}
+  - {fileID: 8287775043196580950}
+  - {fileID: 4192282076904899931}
+  - {fileID: 344544284532211325}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1474443447817314457}
   StringsBanks:
   - {fileID: 6228570007673142302}
-  cacheTime: 638255584654369042
+  cacheTime: 638256554056401297
   cacheVersion: 131605
+--- !u!114 &344544284532211325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Background Ambient/Beach Background
+  m_EditorClassIdentifier: 
+  Path: event:/Background Ambient/Beach Background
+  Guid:
+    Data1: -852319496
+    Data2: 1216230001
+    Data3: 1033724092
+    Data4: 71200712
+  Banks:
+  - {fileID: 1954678686473036340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1954678686473036340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music & BG.bank
+  m_EditorClassIdentifier: 
+  Path: ../Level_Up_Game_Jam_FMOD_Project/Build/Desktop/Music & BG.bank
+  Name: Music & BG
+  StudioPath: bank:/Music & BG
+  lastModified: 638256554056401297
+  FileSizes:
+  - Name: Desktop
+    Value: 1607488
+  Exists: 1
 --- !u!114 &3246091499444137391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,11 +140,38 @@ MonoBehaviour:
   Path: ../Level_Up_Game_Jam_FMOD_Project/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638255584654369042
+  lastModified: 638256386433426541
   FileSizes:
   - Name: Desktop
-    Value: 434880
+    Value: 512832
   Exists: 1
+--- !u!114 &4192282076904899931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Background Ambient/Park Background
+  m_EditorClassIdentifier: 
+  Path: event:/Background Ambient/Park Background
+  Guid:
+    Data1: -417508788
+    Data2: 1142422597
+    Data3: -2147319672
+    Data4: -24901757
+  Banks:
+  - {fileID: 1954678686473036340}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 122880
 --- !u!114 &5470473995115521507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,11 +214,38 @@ MonoBehaviour:
   Path: ../Level_Up_Game_Jam_FMOD_Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638255584652639660
+  lastModified: 638256554036832051
   FileSizes:
   - Name: Desktop
-    Value: 890
+    Value: 1174
   Exists: 1
+--- !u!114 &8287775043196580950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Background Ambient/Office Background
+  m_EditorClassIdentifier: 
+  Path: event:/Background Ambient/Office Background
+  Guid:
+    Data1: -540931028
+    Data2: 1293925515
+    Data3: -1254353747
+    Data4: -32017198
+  Banks:
+  - {fileID: 1954678686473036340}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &9034985708504839361
 MonoBehaviour:
   m_ObjectHideFlags: 0
