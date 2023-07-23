@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class TutorialManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject tutorialAnimations;
+
+    private void Start()
     {
-        
+        StartCoroutine(TutorialStart());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator TutorialStart()
     {
-        
+        yield return new WaitForSeconds(3f);
+        tutorialAnimations.SetActive(true);
     }
 }
