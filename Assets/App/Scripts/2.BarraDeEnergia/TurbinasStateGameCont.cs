@@ -15,4 +15,5 @@ public class TurbinasStateGameCont : MonoBehaviour
     //Derrota
 
     public static bool TurbinasLose = false;
+
 }
