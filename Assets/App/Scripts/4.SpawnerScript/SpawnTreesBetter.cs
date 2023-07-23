@@ -32,6 +32,8 @@ public class SpawnTreesBetter : MonoBehaviour
         //randomItem = Random.Range(0, spawnPoolArboles.Count);
         toSpawn = spawnPoolArboles[randomItem];
         toSpawn.SetActive(true);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Park_Level/Trees Growing");
+        //Debug.Log("Se spawneo unos arboles");
     }
 
     public void DestroyTrees()

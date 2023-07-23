@@ -11,6 +11,7 @@ public class PA_LeafNav : MonoBehaviour
     private bool _isLeft = true;
     
     void OnMouseDown(){
+
         if (_isLeft)
         {
             Debug.Log("Left");
@@ -23,6 +24,8 @@ public class PA_LeafNav : MonoBehaviour
             leaf.Newspaper.OnRight();
             _isLeft = true;
         }
+        //FMODUnity.RuntimeManager.PlayOneShot("event:/Newspaper/Pages");
+        //Debug.Log("Page changed");
     }
     
     void OnMouseEnter(){

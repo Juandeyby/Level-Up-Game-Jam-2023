@@ -5,7 +5,7 @@ using UnityEngine;
 public class ZonaCont3 : MonoBehaviour
 {
     public BarraDeEnergia barraDeEnergia;
-    public SpawnTreesBetter spawnerArboles;
+    public SpawnTreesFinal spawnTreesFinal;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,25 +13,27 @@ public class ZonaCont3 : MonoBehaviour
         {
             TurbinasStateGameCont.energiaAdquirida += 0.5f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
-            spawnerArboles.SpawnObjects();
+            //spawnerArboles.SpawnObjects();
         }
         if (collision.CompareTag("TurbType2"))
         {
             TurbinasStateGameCont.energiaAdquirida += 0.5f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
-            spawnerArboles.SpawnObjects();
+            //spawnerArboles.SpawnObjects();
         }
         if (collision.CompareTag("TurbType3"))
         {
             TurbinasStateGameCont.energiaAdquirida += 2f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
-            spawnerArboles.SpawnObjects();
+            spawnTreesFinal.SpawnTreesMethod();
+            
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
         }
         if (collision.CompareTag("TurbType4"))
         {
             TurbinasStateGameCont.energiaAdquirida += 0.5f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
-            spawnerArboles.SpawnObjects();
+            //spawnerArboles.SpawnObjects();
         }
     }
 
@@ -41,25 +43,27 @@ public class ZonaCont3 : MonoBehaviour
         {
             TurbinasStateGameCont.energiaAdquirida -= 0.5f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
-            spawnerArboles.DestroyTrees();
+            //spawnerArboles.DestroyTrees();
         }
         if (collision.CompareTag("TurbType2"))
         {
             TurbinasStateGameCont.energiaAdquirida -= 0.5f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
-            spawnerArboles.DestroyTrees();
+            //spawnerArboles.DestroyTrees();
         }
         if (collision.CompareTag("TurbType3"))
         {
             TurbinasStateGameCont.energiaAdquirida -= 2f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
-            spawnerArboles.DestroyTrees();
+            spawnTreesFinal.DeSpawnTreesMethod();
+
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
         }
         if (collision.CompareTag("TurbType4"))
         {
             TurbinasStateGameCont.energiaAdquirida -= 0.5f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
-            spawnerArboles.DestroyTrees();
+            //spawnerArboles.DestroyTrees();
         }
     }
 }

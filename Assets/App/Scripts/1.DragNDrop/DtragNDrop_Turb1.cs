@@ -6,7 +6,12 @@ public class DtragNDrop_Turb1 : MonoBehaviour
 {
     private bool _dragging;
 
-    Vector2 _offset;
+    Vector2 _offset, _originalPosition;
+
+    private void Awake()
+    {
+        _originalPosition = transform.position;
+    }
 
     private void Update()
     {
