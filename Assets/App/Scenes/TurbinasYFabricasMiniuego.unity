@@ -2332,7 +2332,7 @@ GameObject:
   - component: {fileID: 1178104162}
   - component: {fileID: 1178104161}
   - component: {fileID: 1178104160}
-  - component: {fileID: 1178104163}
+  - component: {fileID: 1178104164}
   m_Layer: 0
   m_Name: Turbina1
   m_TagString: TurbType1
@@ -2433,7 +2433,7 @@ Transform:
   m_Father: {fileID: 1808106211}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1178104163
+--- !u!114 &1178104164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2442,7 +2442,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1178104158}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f160f05bc7131ee4bac0133585a0d254, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b78a883c6b9a0043b4446effb4ec2e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1219061065
@@ -2591,7 +2591,7 @@ GameObject:
   - component: {fileID: 1292289735}
   - component: {fileID: 1292289738}
   - component: {fileID: 1292289737}
-  - component: {fileID: 1292289736}
+  - component: {fileID: 1292289739}
   m_Layer: 0
   m_Name: Turbina1 (1)
   m_TagString: TurbType1
@@ -2614,18 +2614,6 @@ Transform:
   m_Father: {fileID: 1808106211}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1292289736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292289734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f160f05bc7131ee4bac0133585a0d254, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1292289737
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2704,6 +2692,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1292289739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292289734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b78a883c6b9a0043b4446effb4ec2e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1342739389
 GameObject:
   m_ObjectHideFlags: 0
@@ -3661,7 +3661,7 @@ GameObject:
   - component: {fileID: 1873199447}
   - component: {fileID: 1873199450}
   - component: {fileID: 1873199449}
-  - component: {fileID: 1873199448}
+  - component: {fileID: 1873199451}
   m_Layer: 0
   m_Name: Turbina1 (2)
   m_TagString: TurbType1
@@ -3684,18 +3684,6 @@ Transform:
   m_Father: {fileID: 1808106211}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1873199448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1873199446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f160f05bc7131ee4bac0133585a0d254, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1873199449
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3774,6 +3762,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1873199451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873199446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b78a883c6b9a0043b4446effb4ec2e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1888648894 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5152323758566740901, guid: 1053f79507f9eda41aea52ae39816502, type: 3}

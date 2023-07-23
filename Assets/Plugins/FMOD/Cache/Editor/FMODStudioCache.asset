@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< Updated upstream
 --- !u!114 &-7491716955438902385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,6 +161,9 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 0
 --- !u!114 &6087780137916325260
+=======
+--- !u!114 &-7609056580303812534
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,7 +182,11 @@ MonoBehaviour:
     Data3: -416109666
     Data4: 554344937
   Banks:
+<<<<<<< Updated upstream
   - {fileID: 6317322175440187008}
+=======
+  - {fileID: -3104791182638719579}
+>>>>>>> Stashed changes
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -186,7 +194,38 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 900
+<<<<<<< Updated upstream
 --- !u!114 &6317322175440187008
+=======
+--- !u!114 &-6905067488275662576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Background Ambient/Office Background
+  m_EditorClassIdentifier: 
+  Path: event:/Background Ambient/Office Background
+  Guid:
+    Data1: -540931028
+    Data2: 1293925515
+    Data3: -1254353747
+    Data4: -32017198
+  Banks:
+  - {fileID: 8753856104840165273}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3104791182638719579
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -201,12 +240,41 @@ MonoBehaviour:
   Path: Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
+<<<<<<< Updated upstream
   lastModified: 638256631708485471
   FileSizes:
   - Name: Desktop
     Value: 512832
   Exists: 1
 --- !u!114 &6883096931889829314
+=======
+  lastModified: 638256613196242790
+  FileSizes:
+  - Name: Desktop
+    Value: 528416
+  Exists: 1
+--- !u!114 &-2936002701663298558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638256613195472505
+  FileSizes:
+  - Name: Desktop
+    Value: 1230
+  Exists: 1
+--- !u!114 &-2508333516826483948
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -225,7 +293,11 @@ MonoBehaviour:
     Data3: -2147319672
     Data4: -24901757
   Banks:
+<<<<<<< Updated upstream
   - {fileID: 4518967103627326031}
+=======
+  - {fileID: 8753856104840165273}
+>>>>>>> Stashed changes
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -233,7 +305,11 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 122880
+<<<<<<< Updated upstream
 --- !u!114 &7891399748845103914
+=======
+--- !u!114 &-2029476040567862137
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -242,6 +318,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
@@ -254,6 +331,27 @@ MonoBehaviour:
     Value: 1174
   Exists: 1
 --- !u!114 &8912594426978431613
+=======
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Beach_Level/WavesMovement
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Beach_Level/WavesMovement
+  Guid:
+    Data1: 1077127465
+    Data2: 1212940914
+    Data3: 1862824579
+    Data4: 1722658045
+  Banks:
+  - {fileID: -3104791182638719579}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
+--- !u!114 &-1759452672059270291
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -273,3 +371,139 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1036
   Exists: 1
+<<<<<<< Updated upstream
+=======
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -2936002701663298558}
+  - {fileID: -1759452672059270291}
+  - {fileID: 8753856104840165273}
+  - {fileID: -3104791182638719579}
+  EditorEvents:
+  - {fileID: -6905067488275662576}
+  - {fileID: -2508333516826483948}
+  - {fileID: 1254531232362555526}
+  - {fileID: -2029476040567862137}
+  - {fileID: 6788222863818856198}
+  - {fileID: -7609056580303812534}
+  - {fileID: 2439194474597970141}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -1759452672059270291}
+  StringsBanks:
+  - {fileID: -2936002701663298558}
+  cacheTime: 638256613196242790
+  cacheVersion: 131605
+--- !u!114 &1254531232362555526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Background Ambient/Beach Background
+  m_EditorClassIdentifier: 
+  Path: event:/Background Ambient/Beach Background
+  Guid:
+    Data1: -852319496
+    Data2: 1216230001
+    Data3: 1033724092
+    Data4: 71200712
+  Banks:
+  - {fileID: 8753856104840165273}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2439194474597970141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Beach_Level/Oil Collected
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Beach_Level/Oil Collected
+  Guid:
+    Data1: 469577630
+    Data2: 1213037426
+    Data3: 75368357
+    Data4: -443801275
+  Banks:
+  - {fileID: -3104791182638719579}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 960
+--- !u!114 &6788222863818856198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Park_Level/Sticker Built
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Park_Level/Sticker Built
+  Guid:
+    Data1: -1364365954
+    Data2: 1203603452
+    Data3: 2053262501
+    Data4: 1618105334
+  Banks:
+  - {fileID: -3104791182638719579}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1920
+--- !u!114 &8753856104840165273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music & BG.bank
+  m_EditorClassIdentifier: 
+  Path: Build/Desktop/Music & BG.bank
+  Name: Music & BG
+  StudioPath: bank:/Music & BG
+  lastModified: 638256584487742641
+  FileSizes:
+  - Name: Desktop
+    Value: 1608096
+  Exists: 1
+>>>>>>> Stashed changes
