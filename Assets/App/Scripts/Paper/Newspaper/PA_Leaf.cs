@@ -11,6 +11,7 @@ namespace App.Scripts.Paper.Newspaper
         [SerializeField] private PA_Page page;
         private static readonly int Left = Animator.StringToHash("Left");
         private static readonly int Right = Animator.StringToHash("Right");
+        public bool isLeft = true;
 
         public PA_Newspaper Newspaper => newspaper;
 
