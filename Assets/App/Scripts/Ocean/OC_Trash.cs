@@ -9,6 +9,7 @@ namespace App.Scripts.Ocean
         {
             if (col.CompareTag("Sticker"))
             {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Beach_Level/Oil Collected");
                 Destroy(col.gameObject);
                 if (OC_GamePlay.Instance.Ocean.StickersSpawned <= 0)
                 {
