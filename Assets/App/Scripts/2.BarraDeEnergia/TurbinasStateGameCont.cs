@@ -15,4 +15,18 @@ public class TurbinasStateGameCont : MonoBehaviour
     //Derrota
 
     public static bool TurbinasLose = false;
+
+    // AlphaNubesMalas
+
+    public static float nubeMala1 = 1f;
+    public static float nubeMala2 = 1f;
+    public static float nubeMala3 = 1f;
+    public static float nubeMala4 = 1f;
+
+    // AlphaNubesBuenas
+
+    public static float nubeBuena1 = 0f;
+    public static float nubeBuena2 = 0f;
+    public static float nubeBuena3 = 0f;
+    public static float nubeBuena4 = 0f;
 }

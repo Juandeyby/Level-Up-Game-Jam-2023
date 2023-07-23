@@ -281,10 +281,10 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   switchSettingsMigration: 1
-  HasSourceProject: 0
+  HasSourceProject: 1
   HasPlatforms: 1
   sourceProjectPath: ../Level_Up_Game_Jam_FMOD_Project/Level_Up_Game_Jam_FMOD_Project.fspro
-  sourceBankPath: Build
+  sourceBankPath: ../Level_Up_Game_Jam_FMOD_Project/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -308,7 +308,6 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - Music & BG
   - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
