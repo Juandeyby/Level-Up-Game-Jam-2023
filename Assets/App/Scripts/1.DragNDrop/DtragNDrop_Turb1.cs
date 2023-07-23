@@ -12,6 +12,19 @@ public class DtragNDrop_Turb1 : MonoBehaviour
     {
         if (!_dragging) return;
 
+        if (_dragging && Input.GetKeyDown(KeyCode.Space))
+        {
+            transform.eulerAngles += Vector3.forward * 45f;
+            /*Debug.Log(TurbinasStateGameCont.canIntegrate);
+            if(transform.rotation.z == 90)
+            {
+                TurbinasStateGameCont.canIntegrate = true;
+            }
+            else
+            {
+                TurbinasStateGameCont.canIntegrate = false;
+            }*/
+        }
 
         var mousePositon = GetMousePos();
 
@@ -23,6 +36,8 @@ public class DtragNDrop_Turb1 : MonoBehaviour
         _dragging = true;
 
         _offset = GetMousePos() - (Vector2)transform.position;
+
+        
     }
 
     private void OnMouseUp()
