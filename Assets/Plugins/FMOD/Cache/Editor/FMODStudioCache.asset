@@ -54,6 +54,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1920
+--- !u!114 &-3179437825569092456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music
+  Guid:
+    Data1: 254536120
+    Data2: 1254283755
+    Data3: 1654546847
+    Data4: 1489034311
+  Banks:
+  - {fileID: 6708559856243616208}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 80000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,12 +108,13 @@ MonoBehaviour:
   - {fileID: -6571356995708826336}
   - {fileID: 801314926278863911}
   - {fileID: 871717256633623593}
+  - {fileID: -3179437825569092456}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2068065272960722160}
   StringsBanks:
   - {fileID: 292618170794574439}
-  cacheTime: 638256662537791756
+  cacheTime: 638256712197794316
   cacheVersion: 131605
 --- !u!114 &292618170794574439
 MonoBehaviour:
@@ -103,10 +131,10 @@ MonoBehaviour:
   Path: Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638256662535801300
+  lastModified: 638256698153351362
   FileSizes:
   - Name: Desktop
-    Value: 1332
+    Value: 1374
   Exists: 1
 --- !u!114 &344544284532211325
 MonoBehaviour:
@@ -150,7 +178,7 @@ MonoBehaviour:
   Path: Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638256662537791756
+  lastModified: 638256711530572746
   FileSizes:
   - Name: Desktop
     Value: 629056
@@ -224,7 +252,7 @@ MonoBehaviour:
   Path: Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638256662535801300
+  lastModified: 638256698153341373
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -298,10 +326,10 @@ MonoBehaviour:
   Path: Build/Desktop/Music & BG.bank
   Name: Music & BG
   StudioPath: bank:/Music & BG
-  lastModified: 638256584487742641
+  lastModified: 638256712197794316
   FileSizes:
   - Name: Desktop
-    Value: 1608096
+    Value: 2685792
   Exists: 1
 --- !u!114 &8287775043196580950
 MonoBehaviour:

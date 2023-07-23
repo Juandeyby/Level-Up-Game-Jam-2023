@@ -12,6 +12,9 @@ namespace App.Scripts.Timer
         public UnityEvent onTimerEnd;
         public UnityEvent onSecondPassed;
 
+        public string music = "event:/Music/Music";
+        FMOD.Studio.EventInstance musicEvent;
+
         private float _timer;
         private float _previousSecond;
         
@@ -28,6 +31,8 @@ namespace App.Scripts.Timer
         private void Start()
         {
             _timer = minutes * 60 + seconds;
+            musicEvent = FMODUnity.RuntimeManager.CreateInstance(music);
+            musicEvent.start();
         }
 
         private void Update()
@@ -49,6 +54,8 @@ namespace App.Scripts.Timer
         {
             onTimerEnd.RemoveAllListeners();
             onSecondPassed.RemoveAllListeners();
+            musicEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            //Debug.Log("Game Over");
         }
     }
 }
