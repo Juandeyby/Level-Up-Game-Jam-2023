@@ -6,15 +6,21 @@ public class TurbinasGameManager : MonoBehaviour
 {
     public GameObject textWin, textLose;
     public GameObject backBttn, endGamePanel;
+    public GameObject timerObj;
 
     private void Awake()
     {
+        timerObj.SetActive(true);
         endGamePanel.SetActive(false);
         textWin.SetActive(false);
         textLose.SetActive(false);
         backBttn.SetActive(false);
         TurbinasStateGameCont.TurbinasWin = false;
     }
+    /*private void Start()
+    {
+        StartCoroutine(StartGame());
+    }*/
 
     private void Update()
     {
@@ -32,6 +38,7 @@ public class TurbinasGameManager : MonoBehaviour
     IEnumerator AppearObjectsInWin()
     {
         endGamePanel.SetActive(true);
+        timerObj.SetActive(false);
         textWin.SetActive(true);
         yield return new WaitForSeconds(2f);
         backBttn.SetActive(true);
@@ -44,6 +51,13 @@ public class TurbinasGameManager : MonoBehaviour
         yield return new WaitForSeconds(2f);
         backBttn.SetActive(true);
     }
+
+    /*IEnumerator StartGame()
+    {
+        
+        yield return new WaitForSeconds(2f);
+        
+    }*/
 
 
 

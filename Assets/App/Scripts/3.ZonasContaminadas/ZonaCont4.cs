@@ -6,6 +6,7 @@ public class ZonaCont4 : MonoBehaviour
 {
     public BarraDeEnergia barraDeEnergia;
     public SpawnTreesFinal spawnTreesFinal;
+    public bool idZone4;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -32,8 +33,14 @@ public class ZonaCont4 : MonoBehaviour
             TurbinasStateGameCont.energiaAdquirida += 2f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
             spawnTreesFinal.SpawnTreesMethod();
-            spawnTreesFinal.NubesSucias1Method(2, TurbinasStateGameCont.nubeMala3 -= 0.33f);
-            spawnTreesFinal.NubesLimpias1Method(2, TurbinasStateGameCont.nubeBuena3 += 0.33f);
+
+            if (idZone4)
+            {
+                spawnTreesFinal.NubesSucias1Method(3, 0);
+                spawnTreesFinal.NubesLimpias1Method(3, 1);
+            }
+            
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
         }
     }
 
@@ -62,8 +69,14 @@ public class ZonaCont4 : MonoBehaviour
             TurbinasStateGameCont.energiaAdquirida -= 2f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
             spawnTreesFinal.DeSpawnTreesMethod();
-            spawnTreesFinal.NubesSucias1Method(2, TurbinasStateGameCont.nubeMala3 += 0.33f);
-            spawnTreesFinal.NubesLimpias1Method(2, TurbinasStateGameCont.nubeBuena3 -= 0.33f);
+
+            if (idZone4)
+            {
+                spawnTreesFinal.NubesSucias1Method(3, 1);
+                spawnTreesFinal.NubesLimpias1Method(3, 0);
+            }
+            
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
         }
     }
 }

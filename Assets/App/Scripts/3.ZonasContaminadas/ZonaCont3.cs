@@ -26,8 +26,8 @@ public class ZonaCont3 : MonoBehaviour
             TurbinasStateGameCont.energiaAdquirida += 2f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
             spawnTreesFinal.SpawnTreesMethod();
-            spawnTreesFinal.NubesSucias1Method(3, TurbinasStateGameCont.nubeMala4 -= 0.5f);
-            spawnTreesFinal.NubesLimpias1Method(3, TurbinasStateGameCont.nubeBuena4 += 0.5f);
+            
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
         }
         if (collision.CompareTag("TurbType4"))
         {
@@ -56,8 +56,8 @@ public class ZonaCont3 : MonoBehaviour
             TurbinasStateGameCont.energiaAdquirida -= 2f;
             barraDeEnergia.SetEnergy(TurbinasStateGameCont.energiaAdquirida);
             spawnTreesFinal.DeSpawnTreesMethod();
-            spawnTreesFinal.NubesSucias1Method(3, TurbinasStateGameCont.nubeMala4 += 0.5f);
-            spawnTreesFinal.NubesLimpias1Method(3, TurbinasStateGameCont.nubeBuena4 -= 0.5f);
+
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
         }
         if (collision.CompareTag("TurbType4"))
         {

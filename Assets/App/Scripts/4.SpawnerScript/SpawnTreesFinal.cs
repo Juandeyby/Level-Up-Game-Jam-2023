@@ -10,6 +10,10 @@ public class SpawnTreesFinal : MonoBehaviour
     public GameObject[] nubesSucias;
     public GameObject[] nubesLimpias;
 
+    public GameObject smogFilter;
+
+    float smogAlpha = .35f;
+
     public void SpawnTreesMethod()
     {
         //Debug.Log(i);
@@ -20,7 +24,7 @@ public class SpawnTreesFinal : MonoBehaviour
         }
         else
         {
-            Debug.Log("NomoreTrees");
+            i = Trees.Length - 1;
         }
     }
 
@@ -43,9 +47,19 @@ public class SpawnTreesFinal : MonoBehaviour
         nubesSucias[k].GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, alphaColor);
     }
 
-    public void NubesLimpias1Method(int k, float alphaColor)
+    public void NubesLimpias1Method(int l, float alphaColor2)
     {
-        nubesLimpias[k].GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, alphaColor);
+        nubesLimpias[l].GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, alphaColor2);
+    }
+
+    public void SmogFilterMinusAlpha()
+    {
+        smogFilter.GetComponent<SpriteRenderer>().color = new Color(.660f, 0.469f, 0.295f, smogAlpha -= .039f);
+    }
+
+    public void SmogFilterPlusAlpha()
+    {
+        smogFilter.GetComponent<SpriteRenderer>().color = new Color(.660f, 0.469f, 0.295f, smogAlpha += .039f);
     }
 
 }
