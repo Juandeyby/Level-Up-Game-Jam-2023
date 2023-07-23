@@ -13,7 +13,9 @@ public class TutorialManager : MonoBehaviour
 
     IEnumerator TutorialStart()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.5f);
         tutorialAnimations.SetActive(true);
+        yield return new WaitForSeconds(15f);
+        tutorialAnimations.SetActive(false);
     }
 }
