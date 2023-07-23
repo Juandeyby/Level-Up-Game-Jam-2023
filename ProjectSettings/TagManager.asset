@@ -13,6 +13,8 @@ TagManager:
   - TurbType1
   - TurbType2
   - SpawnableArbol
+  - TurbType3
+  - TurbType4
   layers:
   - Default
   - TransparentFX

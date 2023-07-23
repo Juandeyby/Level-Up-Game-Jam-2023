@@ -6,6 +6,7 @@ namespace App.Scripts.Ocean
 {
     public class OC_Wave : MonoBehaviour
     {
+        
         [SerializeField] private OC_Ocean ocean;
         [SerializeField] private List<OC_Sticker> stickersPrefabs;
         [SerializeField] private List<Transform> stickerSlots;
@@ -14,6 +15,12 @@ namespace App.Scripts.Ocean
         public void GetWave()
         {
             ocean.EnableRandomWave(this);
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Beach_Level/WavesMovement");
+        }
+
+        public void PlaySound()
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Beach_Level/WavesMovement");
         }
         
         public void SpawnSticker()
@@ -24,4 +31,5 @@ namespace App.Scripts.Ocean
             Instantiate(stickersPrefabs[randomPrefab], stickerSlots[randomSlot].position, Quaternion.identity, stickersParent);
         }
     }
+
 }

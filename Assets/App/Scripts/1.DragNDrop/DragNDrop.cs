@@ -39,6 +39,7 @@ public class DragNDrop : MonoBehaviour
     {
         transform.position = transform.position;
         _dragging = false;
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Park_Level/Sticker Built");
     }
 
     Vector2 GetMousePos()
