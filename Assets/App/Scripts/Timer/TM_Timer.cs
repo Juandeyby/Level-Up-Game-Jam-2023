@@ -15,6 +15,7 @@ namespace App.Scripts.Timer
         public string music = "event:/Music/Music";
         FMOD.Studio.EventInstance musicEvent;
 
+
         private float _timer;
         private float _previousSecond;
         

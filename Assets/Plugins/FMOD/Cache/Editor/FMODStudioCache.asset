@@ -114,7 +114,7 @@ MonoBehaviour:
   - {fileID: 2068065272960722160}
   StringsBanks:
   - {fileID: 292618170794574439}
-  cacheTime: 638256712197794316
+  cacheTime: 638256909538212902
   cacheVersion: 131605
 --- !u!114 &292618170794574439
 MonoBehaviour:
@@ -156,13 +156,13 @@ MonoBehaviour:
     Data4: 71200712
   Banks:
   - {fileID: 6708559856243616208}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 122880
 --- !u!114 &601372217671126891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,10 +326,10 @@ MonoBehaviour:
   Path: Build/Desktop/Music & BG.bank
   Name: Music & BG
   StudioPath: bank:/Music & BG
-  lastModified: 638256712197794316
+  lastModified: 638256909538212902
   FileSizes:
   - Name: Desktop
-    Value: 2685792
+    Value: 5866400
   Exists: 1
 --- !u!114 &8287775043196580950
 MonoBehaviour:
@@ -351,13 +351,13 @@ MonoBehaviour:
     Data4: -32017198
   Banks:
   - {fileID: 6708559856243616208}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 122880
 --- !u!114 &9034985708504839361
 MonoBehaviour:
   m_ObjectHideFlags: 0
