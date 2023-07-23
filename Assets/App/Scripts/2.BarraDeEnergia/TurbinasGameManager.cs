@@ -1,20 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TurbinasGameManager : MonoBehaviour
 {
-    public GameObject textWin, textLose;
-    public GameObject backBttn, endGamePanel;
+    public GameObject endGamePanel;
     public GameObject timerObj;
+    //public GameObject selloApproved;
 
     private void Awake()
     {
         timerObj.SetActive(true);
         endGamePanel.SetActive(false);
-        textWin.SetActive(false);
-        textLose.SetActive(false);
-        backBttn.SetActive(false);
         TurbinasStateGameCont.TurbinasWin = false;
     }
     /*private void Start()
@@ -37,19 +35,16 @@ public class TurbinasGameManager : MonoBehaviour
 
     IEnumerator AppearObjectsInWin()
     {
-        endGamePanel.SetActive(true);
         timerObj.SetActive(false);
-        textWin.SetActive(true);
-        yield return new WaitForSeconds(2f);
-        backBttn.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(0);
     }
 
     IEnumerator AppearObjectsInLose()
     {
         endGamePanel.SetActive(true);
-        textLose.SetActive(true);
         yield return new WaitForSeconds(2f);
-        backBttn.SetActive(true);
+        SceneManager.LoadScene(0);
     }
 
     /*IEnumerator StartGame()
