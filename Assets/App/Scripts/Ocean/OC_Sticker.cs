@@ -1,18 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class OC_Sticker : MonoBehaviour
+namespace App.Scripts.Ocean
 {
-    // Start is called before the first frame update
-    void Start()
+    public class OC_Sticker : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private void Start()
+        {
+            var ocOcean = OC_GamePlay.Instance.Ocean;
+            Debug.Log(ocOcean.StickersSpawned, this);
+            Debug.Log(transform.parent.name, this);
+            ocOcean.StickersSpawned -= 1;
+        }
     }
 }

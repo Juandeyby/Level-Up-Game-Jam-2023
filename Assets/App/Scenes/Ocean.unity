@@ -5585,6 +5585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a249412445c37e2408cc1e132fe2811f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Ocean: {fileID: 2001160529}
 --- !u!1 &410686435
 GameObject:
   m_ObjectHideFlags: 0
@@ -6796,7 +6797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minutes: 0
-  seconds: 20
+  seconds: 40
   onTimerEnd:
     m_PersistentCalls:
       m_Calls:
@@ -7519,7 +7520,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -10.71}
+  m_AnchoredPosition: {x: 14.18, y: -10.71}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1787044136
@@ -7787,6 +7788,7 @@ MonoBehaviour:
   waves:
   - {fileID: 92440533}
   - {fileID: 1253989820}
+  stickersSpawned: 10
 --- !u!1 &2018116304
 GameObject:
   m_ObjectHideFlags: 0
