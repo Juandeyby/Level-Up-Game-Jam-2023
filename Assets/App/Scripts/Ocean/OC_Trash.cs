@@ -19,9 +19,10 @@ namespace App.Scripts.Ocean
                 FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Beach_Level/Oil Collected");
                 Destroy(col.gameObject);
                 stickersDestroyed--;
+                OC_GamePlay.Instance.Status.SetStatus(stickersDestroyed);
                 if (stickersDestroyed <= 0)
                 {
-                    OC_GamePlay.Instance.ReturnToPaper();
+                    PA_GamePlay.Instance.ApproveMiniGame(0);
                 }
             }
         }

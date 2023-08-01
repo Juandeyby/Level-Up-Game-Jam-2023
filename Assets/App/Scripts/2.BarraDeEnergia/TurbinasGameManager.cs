@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using App.Scripts.Ocean;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -37,7 +38,7 @@ public class TurbinasGameManager : MonoBehaviour
     {
         timerObj.SetActive(false);
         yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene(0);
+        PA_GamePlay.Instance.ApproveMiniGame(1);
     }
 
     IEnumerator AppearObjectsInLose()

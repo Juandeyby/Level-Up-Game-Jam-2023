@@ -11,6 +11,7 @@ public class PA_GamePlay : MonoBehaviour
     public static PA_GamePlay Instance;
     
     [SerializeField] private Transform originCamera;
+    [SerializeField] private Animator[] approvedAnimators;
     public PA_DataGame paDataGame;
     public PAUI_Start pauiStart;
     
@@ -70,5 +71,10 @@ public class PA_GamePlay : MonoBehaviour
                 paMiniGames.ForEach(x => x.Show());
             });
         }
+    }
+
+    public void ApproveMiniGame(int index)
+    {
+        approvedAnimators[index].SetTrigger("Approved");
     }
 }

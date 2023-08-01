@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 namespace App.Scripts.Timer
@@ -11,6 +12,7 @@ namespace App.Scripts.Timer
         [SerializeField] private int seconds = 30;
         public UnityEvent onTimerEnd;
         public UnityEvent onSecondPassed;
+        public int miniGameID = 0;
 
         public string music = "event:/Music/Music";
         FMOD.Studio.EventInstance musicEvent;
@@ -27,13 +29,14 @@ namespace App.Scripts.Timer
         {
             onTimerEnd.AddListener(() =>
             {
-                Debug.Log("Timer End");
+                SceneManager.LoadScene("Paper");
             });
             
             onSecondPassed.AddListener(() =>
             {
                 if (_timer <= 15.0f)
                 {
+                    Debug.Log("Timer Sound");
                     timerEvent.start();
                 }
             });

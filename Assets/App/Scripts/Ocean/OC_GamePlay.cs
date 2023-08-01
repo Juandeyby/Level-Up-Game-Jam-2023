@@ -7,6 +7,7 @@ namespace App.Scripts.Ocean
     {
         public static OC_GamePlay Instance;
         public OC_Ocean Ocean;
+        public OC_Status Status;
         
         private void Awake()
         {

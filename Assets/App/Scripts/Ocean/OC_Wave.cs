@@ -29,9 +29,15 @@ namespace App.Scripts.Ocean
             if (ocOcean.StickersSpawned <= 0) return;
             var randomPrefab = Random.Range(0, stickersPrefabs.Count);
             var randomSlot = Random.Range(0, stickerSlots.Count);
-            Instantiate(stickersPrefabs[randomPrefab], stickerSlots[randomSlot].position, Quaternion.identity, stickersParent);
-            Instantiate(stickersPrefabs[(randomPrefab + 1) % stickersPrefabs.Count], stickerSlots[(randomSlot + 1) % stickerSlots.Count].position, Quaternion.identity, stickersParent);
+            for (var i = 0; i < 6; i++)
+            {
+                Spawn(randomPrefab++, randomSlot++);
+            }
+        }
+
+        public void Spawn(int randomPrefab, int randomSlot)
+        {
+            Instantiate(stickersPrefabs[randomPrefab % stickersPrefabs.Count], stickerSlots[randomSlot % stickerSlots.Count].position, Quaternion.identity, stickersParent);
         }
     }
-
 }
