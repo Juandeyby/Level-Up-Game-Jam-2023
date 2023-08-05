@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using App.Scripts.Timer;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class TMUI_Timer : MonoBehaviour
 {
@@ -19,6 +21,19 @@ public class TMUI_Timer : MonoBehaviour
     {
         var minutes = Mathf.Floor(timer.Timer / 60);
         var seconds = Mathf.Floor(timer.Timer % 60);
+        AlertColorForTimer((int) timer.Timer);
         timerText.text = $"{minutes:00}:{seconds:00}";
+    }
+    
+    private void AlertColorForTimer(int seconds)
+    {
+        if (seconds <= 15)
+        {
+            timerText.color = Color.red;
+        }
+        else
+        {
+            timerText.color = Color.white;
+        }
     }
 }
