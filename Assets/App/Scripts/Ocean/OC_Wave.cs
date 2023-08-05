@@ -29,7 +29,7 @@ namespace App.Scripts.Ocean
             if (ocOcean.StickersSpawned <= 0) return;
             var randomPrefab = Random.Range(0, stickersPrefabs.Count);
             var randomSlot = Random.Range(0, stickerSlots.Count);
-            for (var i = 0; i < 6; i++)
+            for (var i = 0; i < 5; i++)
             {
                 Spawn(randomPrefab++, randomSlot++);
             }
