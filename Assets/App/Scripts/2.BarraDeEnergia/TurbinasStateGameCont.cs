@@ -16,4 +16,12 @@ public class TurbinasStateGameCont : MonoBehaviour
 
     public static bool TurbinasLose = false;
 
+    // Clock
+
+    public static float moreSpeed = 1f;
+
+    // Level
+
+    public static int currentLevel = 1;
+
 }
