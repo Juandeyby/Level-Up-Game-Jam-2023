@@ -4,10 +4,17 @@ using App.Scripts.Ocean;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class TurbinasGameManager : MonoBehaviour
 {
     public GameObject endGamePanel;
     public GameObject timerObj;
+    public GameObject retryButton, continueButton, backButton;
+    public GameObject energiasLimpiasParent;
+    public GameObject selloAprobado;
+    [HideInInspector] public bool allReadyWin = false;
+    
+    //public GameObject levelTextObj;
     //public GameObject selloApproved;
 
     private void Awake()
@@ -15,30 +22,39 @@ public class TurbinasGameManager : MonoBehaviour
         timerObj.SetActive(true);
         endGamePanel.SetActive(false);
         TurbinasStateGameCont.TurbinasWin = false;
+        TurbinasStateGameCont.energiaAdquirida = 0f;
+        //TurbinasStateGameCont.moreSpeed = 1f;
     }
-    /*private void Start()
-    {
-        StartCoroutine(StartGame());
-    }*/
 
     private void Update()
     {
-        if(TurbinasStateGameCont.energiaAdquirida == 18)
+        if(TurbinasStateGameCont.energiaAdquirida >= 18f)
         {
-            StartCoroutine(AppearObjectsInWin());
+            WinScreenTurbinas();
         }
+        //Debug.Log(TurbinasStateGameCont.energiaAdquirida);
     }
 
     public void LoseScreenTurbinas()
     {
-        StartCoroutine(AppearObjectsInLose());
+        backButton.SetActive(true);
+        retryButton.SetActive(true);
+        energiasLimpiasParent.SetActive(false);
+        //StartCoroutine(AppearObjectsInLose());
+    }
+
+    public void WinScreenTurbinas()
+    {
+        selloAprobado.SetActive(true);
+        allReadyWin = true;
+        StartCoroutine(AppearObjectsInWin());
     }
 
     IEnumerator AppearObjectsInWin()
     {
-        timerObj.SetActive(false);
-        yield return new WaitForSeconds(3f);
-        PA_GamePlay.Instance.ApproveMiniGame(1);
+        yield return new WaitForSeconds(2.5f);
+        backButton.SetActive(true);
+        continueButton.SetActive(true);
     }
 
     IEnumerator AppearObjectsInLose()
@@ -47,16 +63,27 @@ public class TurbinasGameManager : MonoBehaviour
         endGamePanel.SetActive(true);
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(0);
+
     }
 
-    /*IEnumerator StartGame()
+    public void RetryBttn()
     {
-        
-        yield return new WaitForSeconds(2f);
-        
-    }*/
+        SceneManager.LoadScene(3);
+    }
+
+    public void BackBttn()
+    {
+        TurbinasStateGameCont.moreSpeed = 1f;
+        TurbinasStateGameCont.currentLevel = 1;
+        PA_GamePlay.Instance.ApproveMiniGame(1);
+    }
+
+    public void ContinueBttn()
+    {
+        TurbinasStateGameCont.currentLevel += 1;
+        TurbinasStateGameCont.moreSpeed += 1.2f;
+        SceneManager.LoadScene(3);
+    }
 
 
-
-    
 }
